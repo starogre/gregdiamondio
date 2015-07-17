@@ -5,7 +5,10 @@
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home",   'home' %></li>
         <li><%= link_to "Github", 'https://github.com/diamond29' %></li>
-			</ul>
+        <% if user_signed_in? %>
+          <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+        <% end %>
+      </ul>
     </nav>
   </div>
 </header>
