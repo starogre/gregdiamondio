@@ -1,7 +1,10 @@
 require 'test_helper'
 
 class ArticlesControllerTest < ActionController::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  include Devise::TestHelpers
+
+  test "should get about" do
+    get :index
+    assert_response :success
+  end
 end
