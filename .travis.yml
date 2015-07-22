@@ -4,3 +4,10 @@ rvm:
 
 script:
   - bundle exec rake test
+
+notifications:
+  email:
+    recipients:
+      - gregdiamond29@gmail.com
+    on_success: change
+    on_failure: always
