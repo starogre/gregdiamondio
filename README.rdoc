@@ -1,5 +1,22 @@
-== README
-Personal website rails app
+= gregdiamondio
+This is my personal website hosted at {www.gregdiamond.io}[www.gregdiamond.io]
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+I'm using it to learn web development/ruby on rails, so it sees occasional updates as I think of new things to try.
+
+=== Requirements
+  1. Postgresql database
+  2. Ruby - currently developing with 2.2.2
+  3. Bundler gem
+  4. Possibly more?
+
+=== Run a local copy
+  1. git clone https://github.io/diamond29/gregdiamondio.git
+  2. cd gregdiamondio
+  3. bundle install
+  4. bundle exec rake db:create
+  5. bundle exec db:migrate
+  6. bundle exec rails server
+  7. Visit localhost:3000 in a browser.
+  
+=== Usage
+There's currently not much to the site. There's a login for administrators accessible at url/login, which will give you access to different site functionality. Currently you'll need to insert credentials into the database to login. I'll be fixing that soon.
