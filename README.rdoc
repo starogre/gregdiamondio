@@ -16,6 +16,6 @@ I'm using it to learn web development/ruby on rails, so it sees occasional updat
   4. bundle exec rake db:create db:migrate
   5. bundle exec rails server
   6. Visit localhost:3000 in a browser.
-  
+
 === Usage
 There's currently not much to the site. There's a login for administrators accessible at url/login, which will give you access to different site functionality. Currently you'll need to insert credentials into the database to login. I'll be fixing that soon.
