@@ -1,9 +1,9 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
-		<p id="logo">Greg Diamond</p>
+    <p id="logo">Greg Diamond</p>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home",   'home' %></li>
+        <li><%= link_to "Home",   '/' %></li>
         <li><%= link_to "Github", 'https://github.com/diamond29' %></li>
         <% if user_signed_in? %>
           <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
