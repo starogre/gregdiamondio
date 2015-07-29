@@ -44,5 +44,5 @@ group :development, :test do
 end
 
 ruby '2.2.2'
-gem 'bootstrap-sass', '3.3.5.1'
+gem 'bootstrap-sass', '~> 3.3.0'
 gem 'devise', '3.5.1'
