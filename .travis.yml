@@ -1,18 +1,22 @@
 language: ruby
 rvm:
-  - 2.2.2
-
+- 2.2.2
 script:
-  - bundle exec rake db:create
-  - bundle exec rake db:migrate
-  - bundle exec rake test
-
+- bundle exec rake db:create
+- bundle exec rake db:migrate
+- bundle exec rake test
 notifications:
   email:
     recipients:
-      - gregdiamond29@gmail.com
+    - gregdiamond29@gmail.com
     on_success: change
     on_failure: always
-
 addons:
-  postgres: "9.4.1"
+  postgres: 9.4.1
+deploy:
+  provider: heroku
+  api_key:
+    secure: c6cOgLGargV+WLX1y+658jUr0nEugEkFe89/astXfvcqW1Ea6BHhlJzy4EjFrpKO7T5Ht4l6L5fmUQYIdsdPvcowVVobRkb00aoMSumX0RWpIiMrXsS/P+24XXruh6rTQYS28UGERYi1glMizg4iLaGCUUvPO1Frxs9i+bBc6f+ARUU4MK8SkQb+gZKJ9XHYv8ExG99In7B0oY8oZlclZ0mVVVkWgRVRv57+pKBRlQ5ZnfXM7VYX4rvzs3souWnGzXIcj1gddll1B72dxm+dKZFsOflHbjLCDZcwPtNXjrdblaZxpRb2qSIUdvxSXPkzIVdqtPStjm7Tk1RMwujii5JEDTRBVlNjGPRgiONmXIf0r3BeRaC4oaPj54VlVqzBWvSNy9RKWwzj9TiG4D33oT+y60i5UaDmTwgG9jtBAwfjvUXi/J7uRurh4+5uG77GJ7FMEy4D1CMF5plfQEgzJ3pJjycnsQZczGgrdVAcjyzGuEFtcLUwbPID3GZSwdX0gvecX4LqtBywAASct2ZnoHN5HgfQNmZgVpBYTH1RFaaqGWNSgATFbdegfFOh/y8yMITQxKHkqhfUProw6GPm9S5rJR3wj1MVKnexAZs9mpzsqHwmX4PePZyXC88b8+GUr5hiTHNtyiqhouRtQ+7Fgs8ESlFg30g2CU3mGyl0FXQ=
+  app: gregdiamondio
+  on:
+    repo: diamond29/gregdiamondio
