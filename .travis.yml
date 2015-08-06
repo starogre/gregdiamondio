@@ -20,3 +20,6 @@ deploy:
   app: gregdiamondio
   on:
     repo: diamond29/gregdiamondio
+  run:
+    - "rake db:migrate"
+    - restart
