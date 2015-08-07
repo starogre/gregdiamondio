@@ -2,5 +2,19 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$holder-background: #FFF;
+
 .articles {
+
+  .articleholder {
+    h1, h2, h3, h4, h5, h6 {
+      padding: 0px;
+      margin: 0px;
+      margin-bottom:.5em;
+    }
+
+    .headers {
+      margin-bottom: 10px;
+    }
+  }
 }
