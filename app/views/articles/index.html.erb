@@ -3,11 +3,15 @@
 <% end %>
 
 <% @articles.each do |article| %>
-  <h3><%= article.title %></h3>
-  <h3><small><%= article.created_at.strftime('%B %d, %Y') %></small></h3>
-  <p><%= article.body %></p>
+  <div class="articleholder">
+    <h3 class="date"><%= article.created_at.strftime('%A, %B %d, %Y') %></h3>
+    <h2 class="title"><%= article.title %></h2>
+    <div class="body">
+      <%= article.body %></p>
+    </div>
 
-  <% if user_signed_in? %>
-    <%= link_to "EDIT", edit_article_path(article) %>
-  <% end %>
+    <% if user_signed_in? %>
+      <%= link_to "EDIT", edit_article_path(article) %>
+    <% end %>
+  </div>
 <% end %>
