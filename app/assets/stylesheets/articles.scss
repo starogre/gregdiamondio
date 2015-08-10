@@ -2,19 +2,39 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$holder-background: #FFF;
 
 .articles {
-
   .articleholder {
+    $article-padding: 3em;
+
+    &:first-of-type {
+      padding-top: 1em;
+    }
+    &:last-of-type {
+      padding-bottom: 1em;
+    }
+
+    padding-bottom: $article-padding;
+
     h1, h2, h3, h4, h5, h6 {
       padding: 0px;
       margin: 0px;
-      margin-bottom:.5em;
     }
 
-    .headers {
-      margin-bottom: 10px;
+    .title {
+      $title-padding: .5em;
+      padding-bottom: $title-padding;
+      padding-top: $title-padding;
+    }
+
+    .date {
+      font-size: 100%;
+      text-transform: uppercase;
     }
   }
 }
+
+//.articles .articleholder:first-child {
+//    padding-bottom: 4em;
+//    text-transform: uppercase;
+//  }

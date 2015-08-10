@@ -4,8 +4,8 @@
 
 <% @articles.each do |article| %>
   <div class="articleholder">
-    <h5 class="date"><%= article.created_at.strftime('%A, %B %d, %Y') %></h5>
-    <h3 class="title"><%= article.title %></h3>
+    <h3 class="date"><%= article.created_at.strftime('%A, %B %d, %Y') %></h3>
+    <h2 class="title"><%= article.title %></h2>
     <div class="body">
       <%= article.body %></p>
     </div>
