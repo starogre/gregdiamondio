@@ -9,7 +9,7 @@ class Person {
   }
 
   printAlert() {
-    for (var i = 0; i < age; i++) {
+    for (var i = 0; i < this.age; i++) {
       alert(`Person ${this.name}: ${this.age}!`);
     }
   }
