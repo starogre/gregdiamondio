@@ -15,3 +15,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(window).on('resize load', function() {
+    $('body').css({"padding-top": $(".navbar").height() + "px"});
+});
