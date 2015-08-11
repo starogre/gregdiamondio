@@ -11,12 +11,20 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require bootstrap-sprockets
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
 
-$(window).on('resize load', function() {
-    $('body').css({"padding-top": $(".navbar").height() + "px"});
-    $('body').css({"margin-bottom": $(".footer").height() + "px"});
-});
+function spaceNavBars() {
+	$('body').css({"padding-top": $(".navbar").height() + "px"});
+  $('body').css({"margin-bottom": $(".footer").height() + "px"});
+}
+
+$(window).resize(spaceNavBars);
+$(document).ready(spaceNavBars);
+//$(document).ready(function() {
+//	$('body').css({"padding-top": $(".navbar").height() + "px"});
+//  $('body').css({"margin-bottom": $(".footer").height() + "px"});
+//})
