@@ -1,4 +1,6 @@
 class ArticlesController < ApplicationController
+  impressionist actions: [:index]
+
   def index
     @article = Article.new
     @articles = Article.all.sort do |x,y|
