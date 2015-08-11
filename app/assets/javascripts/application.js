@@ -18,4 +18,5 @@
 
 $(window).on('resize load', function() {
     $('body').css({"padding-top": $(".navbar").height() + "px"});
+    $('body').css({"margin-bottom": $(".footer").height() + "px"});
 });
