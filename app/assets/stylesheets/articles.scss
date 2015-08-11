@@ -28,13 +28,37 @@
     }
 
     .date {
-      font-size: 100%;
+      font-size: 1em;
       text-transform: uppercase;
     }
+
+  }
+
+  #input-title, #input-body {
+    $input-padding: .25em;
+    margin: 0px;
+    font-size: 2em;
+    padding-bottom: $input-padding;
+    padding-top: $input-padding;
+    font-family: inherit;
+    font-weight: inherit;
+  }
+
+  #input-title {
+    padding-top: 1em;
+  }
+
+  #input-title-text {
+    width: 25em;
+  }
+
+  #input-body-text {
+    width: 100%;
+    height: 8em;
+  }
+
+  #submit-button {
+    margin-bottom: 2em;
+    margin-top: 1em;
   }
 }
-
-//.articles .articleholder:first-child {
-//    padding-bottom: 4em;
-//    text-transform: uppercase;
-//  }

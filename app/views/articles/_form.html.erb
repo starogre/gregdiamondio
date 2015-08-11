@@ -14,18 +14,12 @@
     </div>
   <% end %>
 
-  <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </p>
+  <%= f.label :title, id: 'input-title' %></br>
+  <%= f.text_field :title, id: 'input-title-text' %></br>
 
-  <p>
-    <%= f.label :body %><br>
-    <%= f.text_area :body %>
-  </p>
+  <%= f.label :body, id: 'input-body' %></br>
+  <%= f.text_area :body, id: 'input-body-text' %></br>
 
-  <p>
-    <%= f.submit %>
-  </p>
+  <%= f.submit id: 'submit-button' %></br>
 
 <% end %>
