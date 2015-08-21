@@ -43,6 +43,8 @@ group :development, :test do
   gem 'spring'
 
   gem 'faker'
+  gem 'pry'
+  gem 'pry-nav'
 end
 
 ruby '2.2.2'
@@ -51,3 +53,4 @@ gem 'devise', '3.5.1'
 gem 'sprockets', '3.2.0'
 gem 'sprockets-es6', '0.7.0'
 gem 'jquery-turbolinks'
+gem 'redcarpet'

@@ -7,7 +7,7 @@
     <h3 class="date"><%= article.created_at.strftime('%A, %B %d, %Y') %></h3>
     <h2 class="title"><%= article.title %></h2>
     <div class="body">
-      <%= article.body %></p>
+      <%= raw article.body %>
     </div>
 
     <% if user_signed_in? %>

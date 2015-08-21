@@ -1,9 +1,13 @@
 class ArticlesController < ApplicationController
+  @@markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, extensions = {})
+
   def index
     @article = Article.new
     @articles = Article.all.sort do |x,y|
       y.created_at <=> x.created_at
     end
+
+    @articles.map { |art| art.body = @@markdown.render art.body }
   end
 
   def edit
