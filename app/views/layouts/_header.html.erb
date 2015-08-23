@@ -1,17 +1,25 @@
 <header class="navbar navbar-fixed-top greg-navbar">
   <div class="container">
     <nav>
-      <ul class="nav navbar-nav navbar-left">
-        <li id="logo"><%= link_to "Greg Diamond", '/' %></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "Projects", projects_path %></li>
-        <li><%= link_to "Github", 'https://github.com/diamond29' %></li>
-        <% if user_signed_in? %>
-          <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
-        <% end %>
-      </ul>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#blahblah" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <span class="navbar-brand" id="logo"><%= link_to "Greg Diamond", '/' %></span>
+      </div>
+      <div class="collapse navbar-collapse" id="blahblah">
+        <ul class="nav navbar-nav navbar-right">
+          <li><%= link_to "Home", root_path %></li>
+          <li><%= link_to "Projects", projects_path %></li>
+          <li><%= link_to "Github", 'https://github.com/diamond29' %></li>
+          <% if user_signed_in? %>
+            <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+          <% end %>
+        </ul>
+      </div>
     </nav>
   </div>
 </header>

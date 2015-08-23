@@ -18,13 +18,9 @@
 //= require_tree .
 
 function spaceNavBars() {
-	$('body').css({"padding-top": $(".navbar").height() + "px"});
+  $('body').css({"padding-top": $(".navbar-header").height() + "px"});
   $('body').css({"margin-bottom": $(".footer").height() + "px"});
 }
 
 $(window).resize(spaceNavBars);
 $(document).ready(spaceNavBars);
-//$(document).ready(function() {
-//	$('body').css({"padding-top": $(".navbar").height() + "px"});
-//  $('body').css({"margin-bottom": $(".footer").height() + "px"});
-//})

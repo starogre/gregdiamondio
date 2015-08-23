@@ -18,6 +18,14 @@ $darker-color: #042b78;
       }
     }
   }
+
+  .navbar-toggle {
+    border-style: solid;
+    border-color: $gray-lighter;
+    .icon-bar {
+      background-color: $gray-lighter;
+    }
+  }
 }
 
 .main-body {
