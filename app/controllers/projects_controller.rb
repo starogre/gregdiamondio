@@ -45,7 +45,6 @@ class ProjectsController < ApplicationController
 
   private
     def project_params
-      binding.pry
       params[:project]
     end
 end
