@@ -4,9 +4,12 @@
 
 .projects {
   .node {
-    background-color: red;
-    padding-left: 15px;
-    padding-right: 15px;
+    .node-inner {
+      border-color: #CFCFCF;
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 4px;
+    }
   }
 }
 
