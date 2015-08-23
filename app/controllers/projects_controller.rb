@@ -8,7 +8,6 @@ class ProjectsController < ApplicationController
     @project = Article.find(params[:id])
   end
 
-  # POST /projects.json
   def create
     @project = Project.new(project_params)
 
@@ -23,8 +22,6 @@ class ProjectsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /projects/1
-  # PATCH/PUT /projects/1.json
   def update
     respond_to do |format|
       if @project.update(project_params)
@@ -37,8 +34,6 @@ class ProjectsController < ApplicationController
     end
   end
 
-  # DELETE /projects/1
-  # DELETE /projects/1.json
   def destroy
     @project.destroy
   end

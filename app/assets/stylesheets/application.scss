@@ -19,6 +19,23 @@
 
 /* universal */
 
+$lighter-color: #80a4eb;
+$main-color: #335FB4;
+$darker-color: #042b78;
+
+.greg-navbar {
+  background-color: $main-color;
+  li {
+    a {
+      font-size: 1.3em;
+      color: white;
+      &:hover, &:focus{
+        background-color: $lighter-color;
+      }
+    }
+  }
+}
+
 .main-body {
   background-color: white;
 }
@@ -28,9 +45,9 @@ body {
 }
 
 .footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   margin-bottom: 0px;
 }
 
@@ -44,8 +61,9 @@ html {
 #logo a:link,
 #logo a:visited,
 #logo a:hover {
-  font-size: 1.7em;
+  font-size: 2em;
   color: #fff;
   text-transform: uppercase;
-	font-family: 'Alfa Slab One', cursive;
+  font-family: 'Alfa Slab One', cursive;
+  letter-spacing: 2px;
 }
