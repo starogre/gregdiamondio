@@ -50,12 +50,14 @@ html {
 
 /* header */
 
-#logo a:link,
-#logo a:visited,
-#logo a:hover {
-  font-size: 2em;
-  color: #fff;
-  text-transform: uppercase;
-  font-family: 'Alfa Slab One', cursive;
-  letter-spacing: 2px;
+#logo {
+  &:link, &:visited, &:hover {
+    font-size: 1.5em;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Alfa Slab One', cursive;
+    letter-spacing: 2px;
+    padding: 7px;
+    background-color: transparent;
+  }
 }
