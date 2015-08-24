@@ -3,7 +3,12 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .projects {
+  .project-row {
+    padding-bottom:20px;
+  }
+
   .node {
+    box-shadow: 2px 2px 2px gray;
     .node-inner {
       border-color: #CFCFCF;
       border-style: solid;

@@ -3,7 +3,7 @@
 <% slice_size = 2 %>
 
 <% @projects.each_slice(2) do |proj_slice| %>
-  <div class="row">
+  <div class="row project-row">
 
     <% if proj_slice.size == slice_size %>
       <% proj_slice.each do |project| %>
