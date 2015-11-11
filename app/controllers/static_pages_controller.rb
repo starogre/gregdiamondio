@@ -6,4 +6,8 @@ class StaticPagesController < ApplicationController
 
   def login
   end
+
+  def landing
+    render :layout => false
+  end
 end

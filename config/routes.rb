@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'articles#index'
+  root 'static_pages#landing'
 
   resources :articles
 
@@ -59,5 +59,5 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-	get ':action' => 'static_pages#:action'
+  get ':action' => 'static_pages#:action'
 end

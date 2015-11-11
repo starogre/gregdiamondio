@@ -43,8 +43,6 @@ group :development, :test do
   gem 'spring'
 
   gem 'faker'
-  gem 'pry'
-  gem 'pry-nav'
 end
 
 ruby '2.2.2'
