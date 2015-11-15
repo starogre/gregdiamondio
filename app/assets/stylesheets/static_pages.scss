@@ -4,3 +4,23 @@
 
 .static_pages {
 }
+
+.landing {
+  background-image: linear-gradient( rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(image-path('skyline.jpg'));
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .container{
+    height:100%;
+    .headline_row{
+      height:100%;
+      .headline_text{
+        height:100%;
+        display:inline-block;
+        vertical-align: middle;
+        text-align: center;
+        float:none;
+      }
+    }
+  }
+}

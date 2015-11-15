@@ -8,6 +8,6 @@ class StaticPagesController < ApplicationController
   end
 
   def landing
-    render :layout => false
+    render :layout => 'landing'
   end
 end
