@@ -14,12 +14,11 @@
     height:100%;
     .headline_row{
       height:100%;
-      .headline_text{
-        height:100%;
-        display:inline-block;
-        vertical-align: middle;
-        text-align: center;
-        float:none;
+      .headline_col{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:50%;
       }
     }
   }
