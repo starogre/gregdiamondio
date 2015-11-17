@@ -10,38 +10,37 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  .container{
-    .link-row{
-      padding: 1em;
-      .landing-link {
-        padding: .25em .75em 0 .75em;
-        font-family: "Ostrich Sans Regular";
-        border: 2px white solid;
-        border-radius: 0;
-        font-size: 3em;
-        color:white;
-        font-weight: bold;
-        background: rgba(0,0,0,0.1);
-        &:hover {
-          background: rgba(255,244,255,1);
-          color: rgba(0,0,0,.8);
-          transition: all 1s ease;
-          text-decoration: none;
-        }
+  .link-row{
+    padding: 1em;
+    .landing-link {
+      padding: .25em .75em 0 .75em;
+      font-family: "Ostrich Sans Regular";
+      border: 2px white solid;
+      border-radius: 0;
+      font-size: 3em;
+      color:white;
+      font-weight: bold;
+      background: rgba(0,0,0,0.1);
+      transition: all .5s ease;
+      &:hover {
+        background: rgba(255,244,255,1);
+        color: rgba(0,0,0,.8);
+        transition: all 1s ease;
+        text-decoration: none;
       }
     }
-    .headline-row{
-      padding-top:10em;
-      .headline-col{
-        h1{
-          vertical-align:middle;
-          text-align:center;
-          font-size:15em;
-          color: white;
-          margin: 0;
-          font-family: "Ostrich Sans Regular";
-          word-wrap: break-word;
-        }
+  }
+  .headline-row{
+    padding-top:10em;
+    .headline-col{
+      h1 {
+        vertical-align:middle;
+        text-align:center;
+        color: white;
+        font-size:8em;
+        margin: 0;
+        font-family: "Ostrich Sans Regular";
+        word-wrap: break-word;
       }
     }
   }
