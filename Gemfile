@@ -45,7 +45,7 @@ group :development, :test do
 end
 
 ruby '2.2.2'
-gem 'bootstrap-sass', '~> 3.3.0'
+gem 'bootstrap-sass', '3.3.4.1'
 gem 'devise', '3.5.1'
 gem 'sprockets', '3.2.0'
 gem 'sprockets-es6', '0.7.0'

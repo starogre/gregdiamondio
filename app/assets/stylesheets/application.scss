@@ -7,29 +7,6 @@ $lighter-color: #80a4eb;
 $main-color: #335FB4;
 $darker-color: #042b78;
 
-.greg-navbar {
-  background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(image-path('skyline.jpg'));
-  background-repeat: no-repeat;
-  background-size: cover;
-  li {
-    a {
-      font-size: 1.3em;
-      color: white;
-      &:hover, &:focus{
-        background-color: $lighter-color;
-      }
-    }
-  }
-
-  .navbar-toggle {
-    border-style: solid;
-    border-color: $gray-lighter;
-    .icon-bar {
-      background-color: $gray-lighter;
-    }
-  }
-}
-
 .main-body {
   background-color: white;
 }
@@ -62,6 +39,63 @@ html {
   }
 }
 @font-face {
-  font-family: 'Ostrich Sans Regular';
-  src: font-url('ostrich-regular.ttf') format("truetype");
+  font-family: 'Ostrich Sans Medium';
+  src: font-url('OstrichSans-Medium.otf') format("opentype");
 }
+
+.fade-in {
+  opacity:0;
+  -webkit-animation:fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+
+  -webkit-animation-delay:1s;
+  -moz-animation-delay:1s;
+  -animation-delay:1s;
+}
+
+.greg-navbar {
+  background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(image-path('skyline.jpg'));
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(75%);
+
+  a{
+    font-family: "Ostrich Sans Medium";
+    font-size: 2em;
+    color:white;
+    font-weight: bold;
+    transition: all .5s ease;
+  }
+
+  .header-button {
+    &:hover {
+      color:gray;
+      transition: all 1s ease;
+      text-decoration:none;
+      background: rgba(255,255,255,0);
+    }
+  }
+
+  .navbar-toggle {
+    border-style: solid;
+    border-color: $gray-lighter;
+    .icon-bar {
+      background-color: $gray-lighter;
+    }
+  }
+
+  .controller-header {
+    padding-bottom:5em;
+  }
+}
+
+
