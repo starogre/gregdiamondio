@@ -12,10 +12,11 @@
       </div>
       <div class="collapse navbar-collapse" id="collapsible-menu">
         <ul class="nav navbar-nav navbar-right">
-	  <li><%= link_to "Home", root_path, class: "header-button" %></li>
+          <li><%= link_to "Home", root_path, class: "header-button" %></li>
+          <li><%= link_to "Blog", articles_path, class: "header-button" %></li>
           <li><%= link_to "Projects", projects_path, class: "header-button"%></li>
           <li><%= link_to "Github", 'https://github.com/diamond29', class: "header-button" %></li>
-	  <li><%= link_to "Resume", '#', class: "header-button" %></li>
+          <li><%= link_to "Resume", '#', class: "header-button" %></li>
           <li><%= mail_to 'gregdiamond29@gmail.com', 'Contact', class: "header-button" %></li>
           <% if user_signed_in? %>
             <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
@@ -23,8 +24,10 @@
         </ul>
       </div>
     </nav>
-    <div class="<%= controller.controller_name %>-header" >
-      <%= render :partial => "#{controller.action_name}_header" rescue nil %>
-    </div>
+    <% if lookup_context.find_all("#{controller.controller_name}/_#{controller.action_name}_header").any? %>
+      <div class="header-content <%= controller.controller_name %>-header" >
+        <%= render :partial => "#{controller.action_name}_header" rescue nil %>
+      </div>
+    <% end %>
   </div>
 </header>
