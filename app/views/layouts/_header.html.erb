@@ -1,25 +1,29 @@
 <header class="navbar navbar-fixed-top greg-navbar">
-  <div class="container">
+  <div class="container-fluid">
     <nav>
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#blahblah" aria-expanded="false">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsible-menu" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <%= link_to "Greg<br/>Diamond".html_safe, articles_path, { class: "navbar-brand", id: "logo" } %>
+        <%= link_to 'GD', root_path, { class: "navbar-brand", id: 'logo'} %>
       </div>
-      <div class="collapse navbar-collapse" id="blahblah">
+      <div class="collapse navbar-collapse" id="collapsible-menu">
         <ul class="nav navbar-nav navbar-right">
-          <li><%= link_to "Home", articles_path %></li>
+          <li><%= link_to "Home", root_path %></li>
           <li><%= link_to "Projects", projects_path %></li>
           <li><%= link_to "Github", 'https://github.com/diamond29' %></li>
+          <li><%= mail_to 'gregdiamond29@gmail.com', 'Contact' %></li>
           <% if user_signed_in? %>
             <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
           <% end %>
         </ul>
       </div>
     </nav>
+    <div class="<%= controller.controller_name %>-header" >
+      <%= render :partial => "#{controller.action_name}_header" rescue nil %>
+    </div>
   </div>
 </header>

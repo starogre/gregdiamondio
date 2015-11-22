@@ -2,15 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.static_pages {
-}
-
-.landing {
-  background-image: linear-gradient( rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(image-path('skyline.jpg'));
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  .link-row{
+.static_pages-header {
+    padding-top:5em;
+    .link-row{
     padding: 1em;
     .landing-link {
       padding: .25em .75em 0 .75em;
@@ -31,7 +25,6 @@
     }
   }
   .headline-row{
-    padding-top:10em;
     .headline-col{
       h1 {
         vertical-align:middle;
