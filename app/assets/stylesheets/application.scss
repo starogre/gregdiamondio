@@ -18,15 +18,22 @@ body {
   width: 100%;
   margin-bottom: 0px;
 
-  .row {
-    a {
-      color: #C8C8C8;
-      transition: all .5s ease;
-      &:hover {
-        color: white;
-        background-color: transparent;
-        transition: all 0s ease;
+  .footer-container {
+    padding-bottom: 1em;
+    .row {
+      a {
+        color: #C8C8C8;
+        transition: all .5s ease;
+        &:hover {
+          color: white;
+          background-color: transparent;
+          transition: all 0s ease;
+        }
       }
+    }
+    .copyright-row {
+      color: #C8C8C8;
+      font-size: .8em;
     }
   }
 }

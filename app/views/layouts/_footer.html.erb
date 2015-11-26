@@ -1,5 +1,5 @@
 <footer class="footer">
-  <div class="container-fluid">
+  <div class="container-fluid footer-container">
     <div class="row">
       <div class="col-sm-12 text-center">
         <%= link_to fa_icon('twitter').html_safe, 'https://twitter.com/greg_diamond29', class: 'btn social-icon' %>
@@ -9,6 +9,11 @@
         <div class="col-sm-12 text-center">
           <%= link_to "About This Site", 'about', class: 'btn' %>
           <%= mail_to 'gregdiamond29@gmail.com', 'Contact', class: 'btn' %>
+        </div>
+      </div>
+      <div class="row copyright-row">
+        <div class="col-sm-12 text-center">
+          <span>© 2015 Gregory Diamond. All rights reserved.</span>
         </div>
       </div>
     </div>
