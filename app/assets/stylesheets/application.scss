@@ -1,8 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-@import "*";
-
 $lighter-color: #80a4eb;
 $main-color: #335FB4;
 $darker-color: #042b78;
@@ -68,21 +66,23 @@ html {
   background-size: cover;
   filter: grayscale(75%);
 
-  a{
+  .header-button {
     font-family: "Ostrich Sans Medium";
     font-size: 2em;
     color:white;
     font-weight: bold;
     transition: all .5s ease;
     background: rgba(255,255,255,0);
-  }
 
-  .header-button {
-    &:hover, &:focus {
+    &:hover {
       color:gray;
       transition: all 1s ease;
       text-decoration:none;
       background: rgba(255,255,255,0);
+    }
+
+    &:focus {
+      @extend .header-button;
     }
   }
 
@@ -98,3 +98,5 @@ html {
     padding-bottom:5em;
   }
 }
+
+@import "*";
