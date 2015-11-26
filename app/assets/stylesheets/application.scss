@@ -32,6 +32,7 @@ body {
       }
     }
     .copyright-row {
+      padding-top: 1em;
       color: #C8C8C8;
       font-size: .8em;
     }
@@ -84,6 +85,7 @@ html {
 
 .greg-navbar {
   background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(image-path('skyline.jpg'));
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   filter: grayscale(75%);
