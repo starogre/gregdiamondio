@@ -1,5 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome";
 
 $lighter-color: #80a4eb;
 $main-color: #335FB4;
@@ -21,6 +22,10 @@ body {
   margin-bottom: 0px;
 }
 
+.social-icon {
+  font-size: 2em;
+}
+
 html {
   position: relative;
   min-height: 100%;
@@ -36,6 +41,7 @@ html {
     background-color: transparent;
   }
 }
+
 @font-face {
   font-family: 'Ostrich Sans Medium';
   src: font-url('OstrichSans-Medium.otf') format("opentype");
@@ -76,7 +82,7 @@ html {
 
     &:hover {
       color:gray;
-      transition: all 1s ease;
+      transition: all 0s ease;
       text-decoration:none;
       background: rgba(255,255,255,0);
     }

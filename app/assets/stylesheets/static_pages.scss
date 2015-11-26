@@ -15,13 +15,11 @@
           border-radius: 0;
           color:white;
           background: rgba(0,0,0,0.1);
-          transition: all .5s ease;
           vertical-align:middle;
           padding: 0em .5em 0em .5em;
           &:hover {
             background: white;
             color: rgba(0,0,0,.8);
-            transition: all 1s ease;
             text-decoration: none;
           }
         }
