@@ -9,4 +9,10 @@ class StaticPagesController < ApplicationController
 
   def landing
   end
+
+  def resume
+    send_file(
+      File.join(Rails.root, 'app', 'assets', 'GregoryDiamondResume.pdf')
+    )
+  end
 end
