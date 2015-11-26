@@ -2,10 +2,6 @@
 @import "bootstrap";
 @import "font-awesome";
 
-$lighter-color: #80a4eb;
-$main-color: #335FB4;
-$darker-color: #042b78;
-
 .main-body {
   background-color: white;
 }
@@ -16,12 +12,23 @@ body {
 }
 
 .footer {
-  border-top-style:solid;
-  border-top-color:gray;
+  background-color: $gray-dark;
   position: absolute;
   bottom: 0;
   width: 100%;
   margin-bottom: 0px;
+
+  .row {
+    a {
+      color: #C8C8C8;
+      transition: all .5s ease;
+      &:hover {
+        color: white;
+        background-color: transparent;
+        transition: all 0s ease;
+      }
+    }
+  }
 }
 
 .social-icon {
@@ -78,6 +85,14 @@ html {
     li {
       a {
         @extend .header-button;
+
+        &:hover {
+          @extend .header-button:hover;
+        }
+
+        &:focus {
+          @extend .header-button:focus;
+        }
       }
     }
   }

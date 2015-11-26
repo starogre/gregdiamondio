@@ -1,13 +1,16 @@
-<footer>
-  <nav class="navbar navbar-default footer">
-    <div class="container">
-      <small class="navbar-text navbar-left">
-        Created with Ruby on Rails
-      </small>
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "About This Site", 'about' %></li>
-        <li><%= mail_to 'gregdiamond29@gmail.com', 'Contact' %></li>
-      </ul>
+<footer class="footer">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <%= link_to fa_icon('twitter').html_safe, 'https://twitter.com/greg_diamond29', class: 'btn social-icon' %>
+        <%= link_to fa_icon('github').html_safe, 'https://github.com/diamond29', class: 'btn social-icon' %>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <%= link_to "About This Site", 'about', class: 'btn' %>
+          <%= mail_to 'gregdiamond29@gmail.com', 'Contact', class: 'btn' %>
+        </div>
+      </div>
     </div>
-  </nav>
+  </div>
 </footer>
