@@ -16,6 +16,8 @@ body {
 }
 
 .footer {
+  border-top-style:solid;
+  border-top-color:gray;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -72,6 +74,25 @@ html {
   background-size: cover;
   filter: grayscale(75%);
 
+  .greg-navbar-links {
+    li {
+      a {
+        @extend .header-button;
+      }
+    }
+  }
+
+  .navbar-toggle {
+    border-style: solid;
+    border-color: $gray-lighter;
+    &:hover, &:active, &:focus {
+      background: rgba(255,255,255,0);
+    }
+
+    .icon-bar {
+      background-color: $gray-lighter;
+    }
+  }
   .header-button {
     font-family: "Ostrich Sans Medium";
     font-size: 2em;
@@ -92,13 +113,6 @@ html {
     }
   }
 
-  .navbar-toggle {
-    border-style: solid;
-    border-color: $gray-lighter;
-    .icon-bar {
-      background-color: $gray-lighter;
-    }
-  }
 
   .header-content {
     padding-bottom:5em;
@@ -106,3 +120,4 @@ html {
 }
 
 @import "*";
+
