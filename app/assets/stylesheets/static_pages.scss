@@ -3,7 +3,11 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .greg-navbar {
   .static_pages-header {
-    padding-top:5em;
+    .landing-content {
+      padding-top:3em;
+      padding-bottom:3em;
+    }
+
     .link-row{
       padding: 1em;
       .btn-toolbar {
@@ -37,6 +41,21 @@
           word-wrap: break-word;
         }
       }
+    }
+  }
+}
+
+.static_pages {
+  .code-btn {
+    color: black;
+    font-size:3em;
+    word-wrap: break-word;
+    white-space: normal;
+    text-decoration:underline;
+
+    &:hover {
+      text-decoration:underline;
+      background:transparent;
     }
   }
 }

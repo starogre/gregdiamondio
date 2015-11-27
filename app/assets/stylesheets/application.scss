@@ -89,6 +89,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   filter: grayscale(75%);
+  margin-bottom:0;
 
   .greg-navbar-links {
     li {
@@ -137,9 +138,8 @@ html {
     }
   }
 
-
   .header-content {
-    padding-bottom:5em;
+    padding-bottom:1em;
   }
 }
 
