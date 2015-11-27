@@ -4,15 +4,16 @@
 
 
 .articles {
-  .row:last-of-type {
-    .articleholder {
-      padding-bottom: 2em;
-      border-bottom: 0;
-    }
-  }
-
   .articleholder {
     $article-padding: 3em;
+
+    &:first-of-type {
+      padding-top: 1em;
+    }
+    &:last-of-type {
+      padding-bottom: 1em;
+      border-bottom: 0;
+    }
 
     border-bottom: 1px solid #CFCFCF;
 
