@@ -64,6 +64,17 @@ html {
   src: font-url('OstrichSans-Medium.otf') format("opentype");
 }
 
+@font-face {
+  font-family: 'Open Sans Regular';
+  src: font-url('OpenSans-Regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'Open Sans Light';
+  src: font-url('OpenSans-Light.ttf') format("truetype");
+}
+
+
 .fade-in {
   opacity:0;
   -webkit-animation:fadeIn ease-in 1;
@@ -119,10 +130,10 @@ html {
     }
   }
   .header-button {
-    font-family: "Ostrich Sans Medium";
+    font-family: "Open Sans Light";
     font-size: 2em;
+    text-transform: uppercase;
     color:white;
-    font-weight: bold;
     transition: all .5s ease;
     background: rgba(255,255,255,0);
 
@@ -141,6 +152,14 @@ html {
   .header-content {
     padding-bottom:1em;
   }
+}
+
+h1, h2, h3, a, p, span {
+  font-family: 'Open Sans Regular';
+}
+
+p {
+  font-size: 1.4em;
 }
 
 @import "*";
