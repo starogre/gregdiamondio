@@ -102,6 +102,10 @@ html {
   filter: grayscale(75%);
   margin-bottom:0;
 
+  span {
+    padding: 0;
+  }
+
   .greg-navbar-links {
     li {
       a {
@@ -156,10 +160,16 @@ html {
 
 h1, h2, h3, a, p, span {
   font-family: 'Open Sans Regular';
+  margin: 0;
+}
+
+h1,h2,h3 {
+  padding:1em;
 }
 
 p {
   font-size: 1em;
+  line-height: 2em;
 }
 
 @import "*";

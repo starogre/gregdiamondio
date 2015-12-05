@@ -18,7 +18,6 @@
 //= require_tree .
 
 function spaceNavBars() {
-//  $('body').css({"padding-top": $(".greg-navbar").height() + "px"});
   $('body').css({"margin-bottom": $(".footer").height() + "px"});
 }
 

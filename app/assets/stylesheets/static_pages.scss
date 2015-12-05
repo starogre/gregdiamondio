@@ -36,7 +36,9 @@
           color: white;
           font-size:4em;
           margin: 0;
-          word-wrap: break-word;
+          padding-left:0;
+          padding-right:0;
+          padding-bottom:1em;
         }
       }
     }
@@ -44,16 +46,37 @@
 }
 
 .static_pages {
-  .code-btn {
-    color: black;
-    font-size:3em;
-    word-wrap: break-word;
-    white-space: normal;
-    text-decoration:underline;
+  .row{
+    .row-content {
+      border-bottom: 1px solid #CFCFCF;
+      padding-top: 2.5em;
+      padding-bottom: 5em;
 
-    &:hover {
-      text-decoration:underline;
-      background:transparent;
     }
+
+    &:last-of-type {
+      .row-content {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  .about-content {
+    .code-btn {
+      color: black;
+      font-size:3em;
+      word-wrap: break-word;
+      white-space: normal;
+      text-decoration:underline;
+      padding-top: 1em;
+      padding-bottom: 1em;
+
+      &:hover {
+        text-decoration:underline;
+        background:transparent;
+      }
+    }
+
+    padding-bottom: 4em;
   }
 }
