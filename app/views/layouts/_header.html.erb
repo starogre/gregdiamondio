@@ -27,6 +27,9 @@
     <% if lookup_context.find_all("#{controller.controller_name}/_#{controller.action_name}_header").any? %>
       <div class="header-content <%= controller.controller_name %>-header" >
         <%= render :partial => "#{controller.action_name}_header" rescue nil %>
+        <div class="text-center">
+          <a href="#page-content"><%= fa_icon('chevron-down') %></a>
+        </div>
       </div>
     <% end %>
   </div>
