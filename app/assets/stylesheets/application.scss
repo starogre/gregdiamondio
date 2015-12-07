@@ -2,13 +2,29 @@
 @import "bootstrap";
 @import "font-awesome";
 
+@font-face {
+  font-family: 'Ostrich Sans Medium';
+  src: font-url('OstrichSans-Medium.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'Open Sans Regular';
+  src: font-url('OpenSans-Regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'Open Sans Light';
+  src: font-url('OpenSans-Light.ttf') format("truetype");
+}
+
 .main-body {
   background-color: white;
 }
 
 body {
   background-color: #FFF;
-  height:100%
+  height:100%;
+  font-family: 'Open Sans Regular';
 }
 
 .footer {
@@ -58,22 +74,6 @@ html {
     background-color: transparent;
   }
 }
-
-@font-face {
-  font-family: 'Ostrich Sans Medium';
-  src: font-url('OstrichSans-Medium.otf') format("opentype");
-}
-
-@font-face {
-  font-family: 'Open Sans Regular';
-  src: font-url('OpenSans-Regular.ttf') format("truetype");
-}
-
-@font-face {
-  font-family: 'Open Sans Light';
-  src: font-url('OpenSans-Light.ttf') format("truetype");
-}
-
 
 .fade-in {
   opacity:0;
