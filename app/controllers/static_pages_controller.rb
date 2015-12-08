@@ -12,7 +12,10 @@ class StaticPagesController < ApplicationController
 
   def resume
     send_file(
-      File.join(Rails.root, 'app', 'assets', 'GregoryDiamondResume.pdf')
+      File.join(Rails.root, 'app', 'assets', 'GregoryDiamondResume.pdf'),
+      filename: 'GregoryDiamondResume.pdf',
+      type: 'application/pdf',
+      disposition: 'inline'
     )
   end
 end
