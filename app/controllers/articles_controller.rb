@@ -1,4 +1,6 @@
 class ArticlesController < ApplicationController
+  before_action :require_login
+  skip_before_action :require_login, only: [:index]
   @@markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, extensions = {})
 
   def index
@@ -15,17 +17,18 @@ class ArticlesController < ApplicationController
   end
 
   def create
+    binding.pry
     @article = Article.new(article_params)
     @article.save
 
-    redirect_to root_path
+    redirect_to articles_path
   end
 
   def update
     @article = Article.find(params[:id])
 
     if @article.update(article_params)
-      redirect_to root_path
+      redirect_to articles_path
     else
       render 'edit'
     end
@@ -35,11 +38,15 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
     @article.destroy
 
-    redirect_to root_path
+    redirect_to articles_path
   end
 
   private
     def article_params
       params.require(:article).permit(:title, :body)
+    end
+
+    def require_login
+      redirect_to '/login' unless user_signed_in?
     end
 end
