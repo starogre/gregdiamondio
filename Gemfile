@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 # Use postgresql as the database for Active Record
@@ -52,3 +51,4 @@ gem 'sprockets-es6', '0.7.0'
 gem 'jquery-turbolinks'
 gem 'redcarpet'
 gem 'font-awesome-rails'
+gem 'rubocop'
