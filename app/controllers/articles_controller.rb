@@ -5,12 +5,9 @@ class ArticlesController < ApplicationController
 
   def index
     @article = Article.new
-    @articles = Article.all.sort do |x,y|
-      y.created_at <=> x.created_at
-    end
 
-    @articles.map { |art| art.body = @@markdown.render art.body }
-  end
+    @articles = grab_sorted_articles
+ end
 
   def edit
     @article = Article.find(params[:id])
@@ -19,8 +16,9 @@ class ArticlesController < ApplicationController
   def create
     @article = Article.new(article_params)
     @article.save
+    @articles = grab_sorted_articles
 
-    redirect_to articles_path
+    render 'index'
   end
 
   def update
@@ -41,11 +39,19 @@ class ArticlesController < ApplicationController
   end
 
   private
-    def article_params
-      params.require(:article).permit(:title, :body)
+  def article_params
+    params.require(:article).permit(:title, :body)
+  end
+
+  def require_login
+    redirect_to '/login' unless user_signed_in?
+  end
+
+  def grab_sorted_articles
+    articles = Article.all.sort do |x,y|
+      y.created_at <=> x.created_at
     end
 
-    def require_login
-      redirect_to '/login' unless user_signed_in?
-    end
+    articles.each { |art| art.body = @@markdown.render art.body }
+  end
 end

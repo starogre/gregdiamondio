@@ -2,9 +2,12 @@
   <a href="<%= project.github_address %>">
     <div class="node-photo">
       <div class="node-photo-content">
-        <span>GO TO GITHUB</span>
+	<span>GO TO GITHUB</span>
       </div>
     </div>
   </a>
+  <% if project.screenshot %>
+    <%= image_tag project.screenshot.url %>
+  <% end %>
   <h3><%= project.title %></h3>
 </div>
