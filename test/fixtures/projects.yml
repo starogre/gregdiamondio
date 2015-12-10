@@ -6,9 +6,15 @@
 #
 one:
   title: A Reddit Blog
+  github_address: "blahblah"
+  website_address: "blahblah"
 
 two:
   title: The Blog
+  github_address: "blahblah"
 
 three:
   title: Something with Chef
+  github_address: "blahblah"
+  website_address: "blahblah"
+
