@@ -12,12 +12,12 @@
       </div>
       <div class="collapse navbar-collapse" id="collapsible-menu">
         <ul class="nav navbar-nav navbar-right greg-navbar-links">
-          <li><%= link_to "Home", root_path, class: "header-button" %></li>
-          <li><%= link_to "Blog", articles_path, class: "header-button" %></li>
-          <li><%= link_to "Projects", projects_path, class: "header-button"%></li>
-          <li><%= link_to "Github", 'https://github.com/diamond29', class: "header-button" %></li>
-          <li><%= link_to "Resume", 'resume', { class: "header-button", target: '_blank' } %></li>
-          <li><%= mail_to 'gregdiamond29@gmail.com', 'Contact', class: "header-button" %></li>
+          <li><%= link_to "Home", root_path, class: "greg-link" %></li>
+          <li><%= link_to "Blog", articles_path, class: "greg-link" %></li>
+          <li><%= link_to "Projects", projects_path, class: "greg-link"%></li>
+          <li><%= link_to "Github", 'https://github.com/diamond29', class: "greg-link" %></li>
+          <li><%= link_to "Resume", 'resume', { class: "greg-link", target: '_blank' } %></li>
+          <li><%= mail_to 'gregdiamond29@gmail.com', 'Contact', class: "greg-link" %></li>
           <% if user_signed_in? %>
             <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
           <% end %>

@@ -7,7 +7,7 @@ class ArticlesController < ApplicationController
     @article = Article.new
 
     @articles = grab_sorted_articles
- end
+  end
 
   def edit
     @article = Article.find(params[:id])

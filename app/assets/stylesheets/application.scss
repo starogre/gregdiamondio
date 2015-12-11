@@ -109,15 +109,7 @@ html {
   .greg-navbar-links {
     li {
       a {
-        @extend .header-button;
-
-        &:hover {
-          @extend .header-button:hover;
-        }
-
-        &:focus {
-          @extend .header-button:focus;
-        }
+        @extend .greg-link;
       }
     }
   }
@@ -131,25 +123,6 @@ html {
 
     .icon-bar {
       background-color: $gray-lighter;
-    }
-  }
-  .header-button {
-    font-family: "Open Sans Light";
-    font-size: 1.5em;
-    text-transform: uppercase;
-    color:white;
-    transition: all .5s ease;
-    background: rgba(255,255,255,0);
-
-    &:hover {
-      color:gray;
-      transition: all 0s ease;
-      text-decoration:none;
-      background: rgba(255,255,255,0);
-    }
-
-    &:focus {
-      @extend .header-button;
     }
   }
 
@@ -171,6 +144,39 @@ html {
   }
 }
 
+.greg-link {
+  font-family: "Open Sans Regular";
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color:white;
+  transition: all .5s ease;
+  background: rgba(255,255,255,0);
+
+  &:hover, &:focus {
+    color:gray;
+    transition: all 0s ease;
+    text-decoration:none;
+    background: rgba(255,255,255,0);
+  }
+}
+
+.greg-btn {
+  @extend .greg-link;
+  padding: 0 .5em 0 .5em;
+  border: 1px white solid;
+  border-radius: 0;
+  color:white;
+  background: rgba(0,0,0,0.1);
+  vertical-align:middle;
+  padding: 0em .5em 0em .5em;
+  &:hover {
+    background: white;
+    color: rgba(0,0,0,.8);
+    text-decoration: none;
+  }
+
+}
+
 h1, h2, h3, a, p, span {
   font-family: 'Open Sans Regular';
   margin: 0;
@@ -183,6 +189,17 @@ h1,h2,h3 {
 p {
   font-size: 1em;
   line-height: 2em;
+}
+
+.header-title {
+  vertical-align:middle;
+  color: white;
+  font-size:4em;
+  margin: 0;
+  padding-left:0;
+  padding-right:0;
+  padding-bottom:1em;
+
 }
 
 @import "*";

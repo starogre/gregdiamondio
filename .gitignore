@@ -13,3 +13,5 @@
 /tmp
 *.cache
 tags
+
+public/system
