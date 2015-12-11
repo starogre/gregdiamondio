@@ -6,15 +6,18 @@
 #
 one:
   title: A Reddit Blog
+  description: Here's some text about a reddit blog. I don't know what that actually means
   github_address: "blahblah"
   website_address: "blahblah"
 
 two:
   title: The Blog
+  description: Here's some text about another blog with some stuff and things. Blah blah blah. Yippee
   github_address: "blahblah"
 
 three:
   title: Something with Chef
+  description: Maybe I made a chef cookbook at some point or something? Nothing yet though, so not much to talk about.
   github_address: "blahblah"
   website_address: "blahblah"
 
